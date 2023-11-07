@@ -124,10 +124,10 @@ class OptionsMenu(Menu): # class OptionsMenu kế thừa class Menu
         elif self.game.START_KEY: # nếu bấm nút enter
             pass
         keys = pygame.key.get_pressed() # lấy ra danh sách nút đc bấm
-        if keys[pygame.K_RIGHT] and self.volume <= 0.9:
-            self.volume += 0.1 # tăng giảm âm lượng
-        if keys[pygame.K_LEFT] and self.volume >= 0.1:
-            self.volume -= 0.1
+        if keys[pygame.K_RIGHT] and self.volume < 1:
+            self.volume += 0.001 # tăng giảm âm lượng
+        if keys[pygame.K_LEFT] and self.volume >= 0.001:
+            self.volume -= 0.001
 
 
 class CreditsMenu(Menu): # màn hình Credits
