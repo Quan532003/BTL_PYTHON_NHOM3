@@ -1,0 +1,18 @@
+GAME_TITLE = "Death War"
+GAME_WIDTH = 1540
+GAME_HEIGHT = 800
+GAME_TOP_LIMIT = 140
+MAX_FPS = 60
+
+COLLIDER_DEBUG = False
+ENABLED_DEBUG = True
+
+HOME_SCREEN = "HomeScreen"
+GAME_SCREEN = "GameScreen"
+
+PLAY_SCENE = "PlayScene"
+
+
+
+
+
